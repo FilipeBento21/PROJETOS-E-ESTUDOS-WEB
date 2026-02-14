@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Quiz Para programadores</title>
+    <meta name="description" content="Um quiz interativo para testar os conhecimentos">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1>Quiz Interativo Para programadores</h1>
+        <p>Teste seus conchecimentos em programação e veja que pontuação você consegue fazer !</p>
+    </header>
+    <main>
+        <!--Introdução-->
+        <Section>
+            <h2>Sobre esse quiz</h2>
+            <p><strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Unde, perspiciatis. Adipisci error tenetur vero quisquam nihil. Exercitationem minus inventore voluptas assumenda error quibusdam esse ab, at modi tempora deleniti quidem nesciunt dignissimos temporibus nobis <br>corporis consectetur provident, iste doloremque? Quia.</p>
+            <p><em>Lorem ipsum</em> dolor sit amet, consectetur adipisicing elit. Doloremque, earum voluptatum recusandae doloribus illum debitis ullam. Qui facere officiis omnis. Fugiat <abbr title="Hyper Text Markup Language">HTML</abbr> <abbr title="Cascandig Style Sheets">CSS</abbr> minima earum magni, atque minus architecto commodi iusto recusandae?</p>
+            <p><b>Lorem ipsum</b> dolor sit amet consectetur adipisicing elit. Omnis labore, perferendis fugit dolore minus sed velit? Ut qui <i>suscipit numquam.</i></p>
+        </Section>
+        <!--Pergunta 1: Múltipla Escolha:-->
+        <section>
+            <h3>P1: Qual linguagem é usada para extruturar páginas Web ?</h3>
+            <form>
+                <input type="radio" value="Python" id="p1a" name="pargunta1">
+                <label for="p1a">Phyton</label><br><br>
+                <input type="radio" value="HTML" id="p1b" name="pargunta1">
+                <label for="p1b">HTML</label><br><br>
+                <input type="radio" value="JavaScript" id="p1c" name="pargunta1">
+                <label for="p1c">JavaScript</label><br><br>
+                <input type="radio" value="Ruby" id="p1d" name="pargunta1">
+                <label for="p1a">Ruby</label><br><br><br>
+            </form>
+        </section>
+        <!--Pergunta 2: Texto-->
+        <section>
+            <h3>P2: NaURL htpps://www.google.com o trecho "google.com" é o _________________</h3><br>
+            <form >
+                <input type="text" id="p2" name="pergunta2" placeholder="Digite Aqui sua Resposta"><br>
+            </form>
+        </section>
+        <!-- Pergunta 3: Senha-->
+         <section>
+            <h3>P3: Escreva Um exemplo de Senha Forte:</h3><br>
+            <form>
+                <Input type="password" id="p3" name="pergunta3" placeholder="Digite Sua Senha Aqui:"></Input><br>
+            </form>
+         </section>
+         <!-- Pergunta 4: data-->
+          <section>
+            <h3>4º) Em que ano o HTML lançou sua primeira versão ?</h3><br>
+            <form>
+                <input type="date" id="p4" name="pergunta4">
+            </form>
+          </section>
+          <!--Pergunta 5: Seleção Múltipla-->
+          <section>
+            <h3>5°) Quais dessas tecnologias são consideradas linguagens de programação ?</h3>
+            <form>
+                <input type="checkbox" id="p5a" name="pergunta5" value="JavaScript">
+                <label for="p5a">JavaScript</label><br>
+                <input type="checkbox" id="p5b" name="pergunta5" value="HTML">
+                <label for="p5b">HTML</label><br>
+                <input type="checkbox" id="p5c" name="pergunta5" value="Java">
+                <label for="p5c">Java</label><br>
+                <input type="checkbox" id="p5d" name="pergunta5" value="CSS">
+                <label for="p5d">CSS</label><br>
+            </form>
+          </section>
+          <!--Pergunta 6: upload de Arquivo-->
+          <section>
+            <h3>6º) Faça o upload de um arquivo contendo código HTML:</h3>
+            <form>
+                <input type="file" id="p6" name="Pargunta6"><br><br>
+            </form>
+          </section>
+          <!--Pergunta 7: DropDown(Menu Suspenso)-->
+          <section>
+            <h3>7º) Selecione o atributo do input que define o seu tipo:</h3><br><br>
+            <form>
+                <select name="Pergunta7" id="p7">
+                    <option value="id">Id</option>
+                    <option value="type">Type</option>
+                    <option value="placeholder">Placeholder</option>
+                    <option value="name">Name</option>
+                </select>
+            </form>
+          </section>
+          <!--Pergunta 8: Imagem-->
+          <section>
+            <h3>8º) Qual linguagem de programação é reresentada na imagem abaixo:</h3>
+            <figure>
+                <img src="./assents/Imagem-Java.png" alt="Imagem da linguagem de programação"><br><br>
+                <figcaption>Figura 1: Logotipo de uma linguagem de programação</figcaption>
+            </figure><br>
+                    <input type="text" id="p8" name="pergunta8" placeholder="Digite a sua Resposta:"><br>  
+          </section>
+        <!--Tabela de Pontuação:-->
+        <section>
+            <h3>Tabela de Pontuação:</h3>
+            <table border="2">
+                <thead>
+                    <tr>Pontuação:</tr>
+                    <tr>Avaliação:</tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0-2 Pontos</td>
+                        <td>Não desista ! Cada Tentativa é uma oportunidade de você aprender ;)</td>
+                    </tr>
+                    <tr>
+                        <td>3-4 Pontos</td>
+                        <td>Você ainda precisa melhorar. tal estudar mais sobre programação ?</td>
+                    </tr>
+                    <tr>
+                        <td>5-7 Pontos</td>
+                        <td>Bom ! seu conhecimento de programação está satisfatório.</td>
+                    </tr>
+                    <tr>
+                        <td>8 Pontos</td>
+                        <td>Perfeito ! você está muito bem informado sobre programação</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Boa sorte na próxima ! Busque mais conchecimento e volte para tentar novamente ;)</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!--Lista de Respostas-->
+        <section>
+            <h3>Verificque suas Respostas:</h3>
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
