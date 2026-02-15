@@ -1,0 +1,104 @@
+/* Fontes usadas no projeto:
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+} */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.container .sidebar {
+    width: 420px;
+    background-color: #121212;
+    padding: 24px 10px 90px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .sidebar h5 {
+    font-size: 18px;
+}
+
+.container .sidebar .nav-logo i {
+    font-size: 40px;
+}
+
+.container .sidebar .nav-library {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.container .sidebar .nav-library:hover {
+    background-color: #383838b9;
+}
+
+.container .sidebar .nav-library i, .container .sidebar .nav-library p {
+    color: #B7B3B6;
+    font-size: 14px;
+}
+
+.container .sidebar .nav-playlist, .container .sidebar .nav-podcast  {
+    background-color: #242424;
+    padding: 16px;
+    border-radius: 10px;
+
+}
+
+.container .sidebar .nav-playlist button, .container .sidebar .nav-podcast button {
+    background-color: #FFFFFF;
+    color: #0D0D0D;
+    border: none;
+    padding: 5px 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.container .sidebar .nav-footer {
+    display: flex;
+    margin-top: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .sidebar .nav-footer a {
+    color: #A7A7A7;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0 12px 8px 0;
+}
+
+.container .sidebar .nav-lang-button {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 2px 1px;
+    margin-top: 16px;
+   cursor: pointer;
+   border-radius: 8px; 
+}
+
+
