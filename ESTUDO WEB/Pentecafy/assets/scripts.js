@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {name: "Nada como um dia após o outro", artist:'Racinais', image: './assets/imgs/album-racionais.jpg'},
         {name: "HIT ME HARD AND SOFT", artist: 'Billie Eilish', image: './assets/imgs/album-hit-me.jpg'},
         {name: "CAJU", artist:'Liniker' , image: './assets/imgs/album-caju.jpg'},
-        {name: "Escândalo Íntimo", artist:'Luísa Sonza' , image: './assets/imgs/artista-mateus-kauan.jpg'},
+        {name: "Escândalo Íntimo", artist:'Luísa Sonza' , image: './assets/imgs/album-escandalo.jpg'},
     ]
 
     const artistGrid = document.querySelector('.artists-grid')
@@ -39,7 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         albumCard.innerHTML = `
             <img src='${album.image}' alt='Imagem do ${album.name}'>
-            <p>${album.name}</p>
+            <h3>${album.name}</h3>
+            <p>${album.artist}</p>
+            
         `
 
         albumsGrid.appendChild(albumCard)
