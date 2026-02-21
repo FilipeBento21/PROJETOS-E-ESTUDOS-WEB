@@ -26,7 +26,7 @@ body {
 }
 
 .container .sidebar {
-    width: 420px;
+    width: 400px;
     background-color: #121212;
     padding: 24px 10px 90px 10px;
     display: flex;
@@ -101,4 +101,122 @@ body {
    border-radius: 8px; 
 }
 
+/* CSS do Main: */
 
+.container .area-geral {
+    padding: 24px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.container .area-geral .search-bar { 
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    padding: 8px 18px;
+    border-radius: 10px;
+    width: 1000px;
+
+}
+
+.container .area-geral .search-bar input {
+    background-color: transparent;
+    border: none;
+    color: #ffffffa8;
+    width: 100%;
+    margin-left: 10px;
+    outline: none;
+}
+
+
+.container .area-geral .content .artists-grid, .container .area-geral .content .albums-grid {
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px; 
+    margin-bottom: 40px;
+
+}
+
+
+.container .area-geral .content .artists-grid .artist-card {
+    background-color: #0D0D0D;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color  0.3s;
+    height: 270px;
+
+}
+
+.container .area-geral .content .albums-grid .album-card {
+    background-color: #282828;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color  0.3s;
+    height: 268px;
+
+}
+
+.container .area-geral .content .artists-grid .artist-card:hover,
+.container .area-geral .content .albums-grid .album-card:hover {
+    background-color: #282828;
+    scale: 1.1;
+    box-shadow: 0px 0px 4px #474747b4;
+}
+
+.container .area-geral .content .artists-grid .artist-card img {
+    width: 100%;
+    border-radius: 50%;
+    height: 190px;
+    object-fit: inherit;
+}
+
+.container .area-geral .content .albums-grid .album-card img {
+    width: 100%;
+    border-radius: 5px;
+    height: 190px;
+}
+
+.container .area-geral .content .artists-grid .artist-card h3,
+.container .area-geral .content .albums-grid .album-card h3 {
+    font-size: 12px;
+}
+
+.container .area-geral .content .artists-grid .artist-card p,
+.container .area-geral .content .albums-grid .album-card p {
+    font-size: 12px;
+    color: #B7B3B6;
+}
+
+.banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg,rgb(175, 40, 150) 36%, rgba(80, 155, 245, 1) 73%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 14px;
+}
+
+.banner h2 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.banner p {
+    font-size: 10px;
+}
+
+.banner button {
+    border-radius: 20px;
+    color: #0D0D0D;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
